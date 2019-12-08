@@ -1,0 +1,21 @@
+function rot13(str) { // LBH QVQ VG!
+ let resultStr = '';
+    
+ for (let i=0; i < str.length; i++){
+     if (str.charAt(i).match(/[^A-Z]+/g)) {
+         resultStr += str.charAt(i);
+     }else{ 
+         if( str.charCodeAt(i) <= 77 ) {
+             resultStr += String.fromCharCode(str.charCodeAt(i)+13);
+         }else{
+             resultStr += String.fromCharCode(str.charCodeAt(i)-13);
+         }
+        };
+    };
+ 
+ console.log(resultStr);
+  return resultStr;
+}
+
+// Change the inputs below to test
+rot13("GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT.");

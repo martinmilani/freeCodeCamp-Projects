@@ -1,0 +1,35 @@
+function convertToRoman(num) {
+    let romArr = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M'];
+    let decArr = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000];
+
+
+    function largestBaseValueIndex(x, arr) {
+        let index = 0;
+        for (let i = 0; i < 13; i++) {
+            if (x < arr[i]) {
+                break
+            };
+            index = i;
+        };
+        return index;
+    }
+    
+    let count = num;
+    let quotient = 0;
+    let remainder = 0;
+    let roman = '';
+
+    while (count > 0) {
+        let n = largestBaseValueIndex(count,decArr);
+        quotient = Math.floor(count/decArr[n]);
+        remainder = count % decArr[n];
+        for (let i = 1; i <= quotient; i++) { 
+            roman += romArr[n];
+        };
+        count = remainder;
+    };
+    
+    return roman;
+
+};
+convertToRoman(16);
