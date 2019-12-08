@@ -1,0 +1,23 @@
+function palindrome(str) {
+  // Good luck!+
+  // set string to lower case
+  let newStr = str.toLowerCase();
+
+  // remove space characters from string
+  let noSpaceStr = newStr.replace(/[^0-9a-zA-Z]+/g,'');
+  //compare characters
+  let index = 0;
+  let pal = true;
+  while (pal & index < noSpaceStr.length - (index+1)) {
+    if(noSpaceStr.charAt(index) == noSpaceStr.charAt(noSpaceStr.length - (index+1))) {  
+      index +=1;
+    } else {
+      pal = false;
+    };
+  }
+  return pal;
+}
+
+
+
+palindrome("2_A3*3#A2");
