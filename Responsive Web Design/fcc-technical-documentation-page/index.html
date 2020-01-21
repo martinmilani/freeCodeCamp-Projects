@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC Technical Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+_
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div class="main-body">
+  <nav id="navbar">
+    <header>Java Documentation</header>
+    <ul>
+      <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+      <li><a href="#Basic_Syntax" class="nav-link">Basic Syntax</a></li>
+      <li><a href="#Object_and_Classes" class="nav-link">Object and Classes</a></li>
+      <li><a href="#Variable_Types" class="nav-link">Variable Types</a></li>
+      <li><a href="#Decision_Making" class="nav-link">Decision Making</a></li>
+      <li><a href="#Strings_Class" class="nav-link">Strings Class</a></li>
+      <li><a href="#Reference" class="nav-link">Reference</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <p>Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding
+          of Java. This reference will take you through simple and practical approaches while learning Java Programming language.</p>
+        <p>Java programming language was originally developed by Sun Microsystems which was initiated by James Gosling and released in 1995 as core component of Sun Microsystems' Java platform (Java 1.0 [J2SE]).</p>
+        <ul>
+          <h4>Java is:</h4>
+          <li>Object Oriented</li>
+          <li>Platform Independent</li>
+          <li>Simple</li>
+          <li>Secure</li>
+          <li>Architecture-neutral</li>
+          <li>Portable</li>
+          <li>Robust</li>
+          <li>Multithreaded</li>
+          <li>Interpreted</li>
+          <li>High Performance</li>
+          <li>Distributed</li>
+          <li>Dynamic</li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="Basic_Syntax">
+      <header>Basic Syntax</header>
+      <article>
+        <p>When we consider a Java program, it can be defined as a collection of objects that communicate via invoking each other's methods. Let us now briefly look into what do class, object, methods, and instance variables mean.</p>
+        <ul>
+          <li>Object − Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behavior such as wagging their tail, barking, eating. An object is an instance of a class.</li>
+          <li>Class − A class can be defined as a template/blueprint that describes the behavior/state that the object of its type supports.</li>
+          <li>Methods − A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated and all the actions are executed.</li>
+          <li>Instance Variables − Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.</li>
+        </ul>
+        <h4>Example</h4>
+        <code>public class MyFirstJavaProgram {
+
+               /* This is my first java program.
+                * This will print 'Hello World' as the outpu */
+
+               public static void main(String []args) {
+               System.out.println("Hello World"); // prints Hello World
+              }
+        }</code>
+      </article>
+    </section>
+    <section class="main-section" id="Object_and_Classes">
+      <header>Object and Classes</header>
+      <article>
+        <h4>Objects in Java</h4>
+        <p>Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behaviors – wagging the tail, barking, eating. An object is an instance of a class.</p>
+        <h4>Classes in Java</h4>
+        <p> A class can be defined as a template/blueprint that describes the behavior/state that the object of its type support.</p>
+      </article>
+      <article>
+        <h4>Example</h4>
+        <code>public class Puppy {
+       public Puppy(String name) {
+          // This constructor has one parameter, name.
+          System.out.println("Passed Name is :" + name );
+       }
+
+       public static void main(String []args) {
+          // Following statement would create an object myPuppy
+          Puppy myPuppy = new Puppy( "tommy" );
+       }
+    }</code>
+      </article>
+    </section>
+    <section class="main-section" id="Variable_Types">
+      <header>Variable Types</header>
+      <article>
+        <p> variable provides us with named storage that our programs can manipulate. Each variable in Java has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and
+          the set of operations that can be applied to the variable.</p>
+        <p>You must declare all variables before they can be used. Following is the basic form of a variable declaration −</p>
+        <code>data type variable [ = value][, variable [ = value] ...] ;</code>
+        <p>Here data type is one of Java's datatypes and variable is the name of the variable. To declare more than one variable of the specified type, you can use a comma-separated list.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Decision_Making">
+      <header>Decision Making</header>
+      <article>
+        <p>Decision making structures have one or more conditions to be evaluated or tested by the program, along with a statement or statements that are to be executed if the condition is determined to be true, and optionally, other statements to be executed
+          if the condition is determined to be false.</p>
+        <p>An if statement consists of a Boolean expression followed by one or more statements.</p>
+        <code>if(Boolean_expression) {
+   // Statements will execute if the Boolean expression is true
+}</code>
+        <P>If the Boolean expression evaluates to true then the block of code inside the if statement will be executed. If not, the first set of code after the end of the if statement (after the closing curly brace) will be executed.</P>
+      </article>
+    </section>
+    <section class="main-section" id="Strings_Class">
+      <header>Strings Class</header>
+      <article>
+        <p>Strings, which are widely used in Java programming, are a sequence of characters. In Java programming language, strings are treated as objects.</p>
+        <p>The Java platform provides the String class to create and manipulate strings.</p>
+        <code>String greeting = "Hello world!";</code>
+      </article>
+    </section>
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <p>All the documentation in this page is taken from <a href="https://www.tutorialspoint.com/java/index.htm" target="blank">TutorialsPoint</a></p>
+    </section>
+  </main>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
